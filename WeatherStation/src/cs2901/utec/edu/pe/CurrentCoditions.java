@@ -1,6 +1,6 @@
 package cs2901.utec.edu.pe;
 
-public class CurrentCoditions implements Observer {
+public class CurrentCoditions implements Observer, DisplayElement {
 
 	double temperature;
 	double humidity;
@@ -15,6 +15,7 @@ public class CurrentCoditions implements Observer {
 		display();
 	}
 
+	@Override
 	void display() {
 		System.out.println(temperature);
 		System.out.println(humidity);
